@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UZCar</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap">
+    
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="container container-fix">
+                <div class="header__navbar-list">
+                    <i class="header-mobile-menu fa-solid fa-bars" onclick="showMenu()"></i>
+                    <div class="logo__text">
+                        <a href="#" class="logo-uz">UZ</a>
+                        <a href="#" class="logo-car">Car</a>
+                    </div>
+                    <div class="header__navbar-item-wrap">
+                        <li class="header__navbar-item"><a href="">Mahsulotlar</a></li>
+                        <li class="header__navbar-item"><a href="">Chegirmalar</a></li>
+                        <li class="header__navbar-item d-sm-none d-md-block"><a href="">Yetkazib berish</a></li>
+                    </div>
+                    <ul class="header__navbar-item-action d-none d-lg-flex">
+                        <li class="header__navbar-item-number d-lg-flex">+998 (99) 121 23 08</li>
+                        <li class="header__navbar-item-user d-lg-flex"><img src="./icons/user.svg" alt=""></li>
+                        <li class="header__navbar-item-heart d-lg-flex"><img src="./icons/heart.svg" alt=""></li>
+                        <li class="header__navbar-item-cart d-lg-flex"><img src="./icons/cart.svg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="new-product">
+                <div class="container container-fix">
+                    <div class="row row-fix">
+                        <div class="col col-fix col-12 col-lg-6 col-xl-6">
+                            <div class="new-product-description">
+                                <span class="new-product-fist">O‘zbekistonda eng yangi mashina shinalari, 30% gacha chegirma.</span>
+                                <span class="new-product-second">O‘zbekiston bo‘ylab yetkazib berish bepul.</span>
+                                <div class="new-product__search">
+                                    <input type="text" class="new-product__search-input" placeholder="Mahsulotlar bo‘ylab izlash">
+                                    <button class="new-product__search-button">
+                                        <i>
+                                            <img src="./icons/search.svg" alt="search">
+                                        </i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-fix col-12 col-lg-6 col-xl-6">
+                            <div class="new-product-img-wrap">
+                                <img class="new-product-img" src="./img/png-transparent-car-wheel-tire-rim-motor-vehicle-service-car-car-automobile-repair-shop-vehicle-depositphotos-bgremover 1.png" alt="new tires">
+                                <span class="new-product-shadow"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="offer">
+                <div class="container container-fix">
+                    <div class="row row-fix">
+                        <div class="col col-fix col-12 col-lg-4 col-xl-4">
+                            <div class="offer__product">
+                                <div class="offer__product-img-wrap">
+                                    <img src="./img/427-4278337_automotive-seat-car-seat-hd-png-download 1.png" alt="" class="offer__product-img">
+                                </div>
+                                <a href="#" class="offer__product-dsc">
+                                    <span class="offer__product-dsc-head">Avtomobile o‘rindiqlari</span>
+                                    <span class="offer__product-dsc-footer">O‘lchamlar va brendlar bo‘ylab izlang.</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col col-fix col-12 col-lg-4 col-xl-4">
+                            <div class="offer__product">
+                                <div class="offer__product-img-wrap">
+                                    <img src="./img/81qRd54FiWL 1.png" alt="" class="offer__product-img">
+                                </div>
+                                <a href="#" class="offer__product-dsc">
+                                    <span class="offer__product-dsc-head">Avtomobile o‘rindiqlari</span>
+                                    <span class="offer__product-dsc-footer">O‘lchamlar va brendlar bo‘ylab izlang.</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col col-fix col-12 col-lg-4 col-xl-4">
+                            <div class="offer__product">
+                                <div class="offer__product-img-wrap">
+                                    <img src="./img/seat.png" alt="" class="offer__product-img">
+                                </div>
+                                <a href="#" class="offer__product-dsc">
+                                    <span class="offer__product-dsc-head">Avtomobile o‘rindiqlari</span>
+                                    <span class="offer__product-dsc-footer">O‘lchamlar va brendlar bo‘ylab izlang.</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="classify-products">
+                <div class="container container-fix">
+                    <div class="row row-fix">
+                        <div class="col col-fix col-12 col-md-5 col-lg-4">
+                            <div class="category">
+                                <div id="shinalar" class="category-product active" onclick="changeProductList('Shinalar', this)">
+                                    <img class="category-list__img" src="./img/Shinalar.png"></img>
+                                    <span class="category-list__name">Shinalar</span>
+                                    <i class="category-list__icon-right fa-solid fa-angle-right"></i>
+                                </div>
+                                <div id="rullar" class="category-product" onclick="changeProductList('Rullar', this)">
+                                    <img class="category-list__img" src="./img/kisspng-car-toyota-steering-wheel-driving-black-steering-wheel-5a94d3d64a46d4 1 (1).png"></img>
+                                    <span class="category-list__name">Rullar</span>
+                                    <i class="category-list__icon-right fa-solid fa-angle-right"></i>
+                                </div>
+                                <div id="orindiqlar" class="category-product" onclick="changeProductList('Orindiqlar', this)">
+                                    <img class="category-list__img" src="./img/O‘rindiqlar.png"></img>
+                                    <span class="category-list__name">O‘rindiqlar</span>
+                                    <i class="category-list__icon-right fa-solid fa-angle-right"></i>
+                                </div>
+                                <div id="akkumlyatorlar" class="category-product" onclick="changeProductList('Akkumlyatorlar', this)">
+                                    <img class="category-list__img" src="./img/Akkumlyatorlar.png"></img>
+                                    <span class="category-list__name">Akkuml yatorlar</span>
+                                    <i class="category-list__icon-right fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-fix col-12 col-md-7 col-lg-8">
+                            <div class="row row-fix">
+                                <div class="col col-fix col-6 col-md-6 col-lg-4 col-xl-4">
+                                    <div class="products-item">
+                                        <img src="./img/81qRd54FiWL 1.png" alt="">
+                                        <a href="#" class="products-name">Hankook Kinergy ST H735 all Season Radial</a>
+                                        <div class="products__vote-price">
+                                            <a href="#">
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                            </a>
+                                            <p class="products-price">$86.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-fix col-6 col-md-6 col-lg-4 col-xl-4">
+                                    <div class="products-item">
+                                        <img src="./img/81qRd54FiWL 1.png" alt="">
+                                        <a href="#" class="products-name">Hankook Kinergy ST H735 all Season Radial</a>
+                                        <div class="products__vote-price">
+                                            <a href="#">
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                            </a>
+                                            <p class="products-price">$86.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-fix col-6 col-md-6 col-lg-4 col-xl-4">
+                                    <div class="products-item">
+                                        <img src="./img/81qRd54FiWL 1.png" alt="">
+                                        <a href="#" class="products-name">Hankook Kinergy ST H735 all Season Radial</a>
+                                        <div class="products__vote-price">
+                                            <a href="#">
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                            </a>
+                                            <p class="products-price">$86.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-fix col-6 col-md-6 col-lg-4 col-xl-4">
+                                    <div class="products-item">
+                                        <img src="./img/81qRd54FiWL 1.png" alt="">
+                                        <a href="#" class="products-name">Hankook Kinergy ST H735 all Season Radial</a>
+                                        <div class="products__vote-price">
+                                            <a href="#">
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                            </a>
+                                            <p class="products-price">$86.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-fix col-6 col-md-6 col-lg-4 col-xl-4">
+                                    <div class="products-item">
+                                        <img src="./img/81qRd54FiWL 1.png" alt="">
+                                        <a href="#" class="products-name">Hankook Kinergy ST H735 all Season Radial</a>
+                                        <div class="products__vote-price">
+                                            <a href="#">
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                            </a>
+                                            <p class="products-price">$86.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-fix col-6 col-md-6 col-lg-4 col-xl-4">
+                                    <div class="products-item">
+                                        <img src="./img/81qRd54FiWL 1.png" alt="">
+                                        <a href="#" class="products-name">Hankook Kinergy ST H735 all Season Radial</a>
+                                        <div class="products__vote-price">
+                                            <a href="#">
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                                <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                            </a>
+                                            <p class="products-price">$86.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination-products">
+                <div class="container container-fix">
+                    <ul class="pagination-products-list">
+                        <li class="fist-last-page">
+                            <i class="pagination-item__icon fas fa-angle-left fist-page"></i>
+                        </li>
+                        <li class="pagination-item active">
+                            1
+                        </li>
+                        <li class="pagination-item">
+                            2
+                        </li>
+                        <li class="pagination-item">
+                            3
+                        </li>
+                        <li class="pagination-item">
+                            4
+                        </li>
+                        <li class="pagination-item">
+                            5
+                        </li>
+                        <li class="fist-last-page">
+                            <i class="pagination-item__icon fas fa-angle-right"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-offer">
+                <div class="container container-fix">
+                    <div class="row row-fix">
+                        <div class="col col-fix col-12 col-lg-4">
+                            <div class="service-offer__product offer__product">
+                                <div class="offer__product-img-wrap">
+                                    <img src="./img/service-img/1.png" alt="" class="offer__product-img">
+                                </div>
+                                <a href="#" class="offer__product-dsc">
+                                    <span class="offer__product-dsc-head">Avtomobile o‘rindiqlari</span>
+                                    <span class="offer__product-dsc-footer">O‘lchamlar va brendlar bo‘ylab izlang.</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col col-fix col-12 col-lg-4">
+                            <div class="service-offer__product offer__product">
+                                <div class="offer__product-img-wrap">
+                                    <img src="./img/service-img/2.png" alt="" class="offer__product-img">
+                                </div>
+                                <a href="#" class="offer__product-dsc">
+                                    <span class="offer__product-dsc-head">Avtomobile o‘rindiqlari</span>
+                                    <span class="offer__product-dsc-footer">O‘lchamlar va brendlar bo‘ylab izlang.</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col col-fix col-12 col-lg-4">
+                            <div class="service-offer__product offer__product">
+                                <div class="offer__product-img-wrap">
+                                    <img src="./img/service-img/24.png" alt="" class="offer__product-img">
+                                </div>
+                                <a href="#" class="offer__product-dsc">
+                                    <span class="offer__product-dsc-head">Avtomobile o‘rindiqlari</span>
+                                    <span class="offer__product-dsc-footer">O‘lchamlar va brendlar bo‘ylab izlang.</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="model-spare">
+                <div class="container container-fix">
+                    <div class="row row-fix">
+                        <div class="col col-fix col-12 col-lg-6">
+                            <div class="model-spare__dcs">
+                                <span>Avtomabil ehtiyot qismlari, eng ishonchli va sifatli.</span>
+                                <button class="model-spare__btn">
+                                    Barchasi
+                                    <i class="model-spare__btn-icon fas fa-angle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col col-fix col-12 col-lg-6">
+                            <img src="./img/spare model.png" alt="" class="model-spare-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="latest-product">
+                <div class="container container-fix">
+                    <div class="latest-product__header">
+                        <span>Eng songi Mahsulotlar</span>
+                        <a href="#" class="latest-model-btn">
+                            Barchasi
+                            <i class="latest-model-btn-icon fas fa-angle-right"></i>
+                        </a>
+                    </div>
+                    <div class="row row-fix">
+                        <div class="col col-fix col-6 col-md-4 col-lg-3">
+                            <div class="products-item">
+                                <img src="./img/new-products/1.png" alt="">
+                                <a href="#" class="products-name">Hankook Kinergy ST H735 all Season Radial</a>
+                                <div class="products__vote-price">
+                                    <a href="#">
+                                        <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                        <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                        <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                        <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                        <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                    </a>
+                                    <p class="products-price">$86.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-fix col-6 col-md-4 col-lg-3">
+                            <div class="products-item">
+                                <img src="./img/new-products/2.png" alt="">
+                                <a href="#" class="products-name">Hankook Kinergy ST H735 all Season Radial</a>
+                                <div class="products__vote-price">
+                                    <a href="#">
+                                        <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                        <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                        <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                        <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                        <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                    </a>
+                                    <p class="products-price">$86.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-fix col-6 col-md-4 col-lg-3">
+                            <div class="products-item">
+                                <img src="./img/new-products/3.png" alt="">
+                                <a href="#" class="products-name">Hankook Kinergy ST H735 all Season Radial</a>
+                                <div class="products__vote-price">
+                                    <a href="#">
+                                        <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                        <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                        <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                        <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                        <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                    </a>
+                                    <p class="products-price">$86.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-fix col-6 col-md-4 col-lg-3">
+                            <div class="products-item">
+                                <img src="./img/new-products/4.png" alt="">
+                                <a href="#" class="products-name">Hankook Kinergy ST H735 all Season Radial</a>
+                                <div class="products__vote-price">
+                                    <a href="#">
+                                        <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                        <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                        <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                        <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                        <i class="products__vote-star-icon fa-solid fa-star"></i>
+                                    </a>
+                                    <p class="products-price">$86.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="brands">
+                <div class="container container-fix container container-fix-xl">
+                    <span class="brands-header">Brendlar</span>
+                    <div class="row row-fix">
+                        <div class="col col-fix col-6 col-md-4 col-lg-3">
+                            <a href="" class="brands-link">
+                                <img src="./img/brend/audi.png" alt="">
+                                <span>Audi</span>
+                            </a>
+                        </div>
+                        <div class="col col-fix col-6 col-md-4 col-lg-3">
+                            <a href="" class="brands-link">
+                                <img src="./img/brend/Mercedes.png" alt="">
+                                <span>Mercedes</span>
+                            </a>
+                        </div>
+                        <div class="col col-fix col-6 col-md-4 col-lg-3">
+                            <a href="" class="brands-link">
+                                <img src="./img/brend/Daewoo.png" alt="">
+                                <span>Daewoo</span>
+                            </a>
+                        </div>
+                        <div class="col col-fix col-6 col-md-4 col-lg-3">
+                            <a href="" class="brands-link">
+                                <img src="./img/brend/Hyundai.png" alt="">
+                                <span>Hyundai</span>
+                            </a>
+                        </div>
+                        <div class="col col-fix col-6 col-md-4 col-lg-3">
+                            <a href="" class="brands-link">
+                                <img src="./img/brend/Tesla.png" alt="">
+                                <span>Tesla</span>
+                            </a>
+                        </div>
+                        <div class="col col-fix col-6 col-md-4 col-lg-3">
+                            <a href="" class="brands-link">
+                                <img src="./img/brend/Toyota.png" alt="">
+                                <span>Toyota</span>
+                            </a>
+                        </div>
+                        <div class="col col-fix col-6 col-md-4 col-lg-3">
+                            <a href="" class="brands-link">
+                                <img src="./img/brend/Ford.png" alt="">
+                                <span>Ford</span>
+                            </a>
+                        </div>
+                        <div class="col col-fix col-6 col-md-4 col-lg-3">
+                            <a href="" class="brands-link">
+                                <img src="./img/brend/Chevrolet.png" alt="">
+                                <span>Chevrolet</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container container-fix container container-fix-xl">
+                <div class="row row-fix">
+                    <div class="col col-fix col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="footer-logo-hotline">
+                            <div class="logo">
+                                <span class="logo__circle"></span>
+                                <a href="" class="logo__text">
+                                    <span class="logo-uz avtive">UZ</span>
+                                    <span class="logo-car avtive">Car</span>
+                                </a>
+                            </div>
+                            <p>+998 (99) 121 23 08</p>
+                        </div>
+                    </div>
+                    <div class="col col-fix col-12 col-sm-6 col-md-4 col-lg-3">
+                        <ul class="footer-information">
+                            <li class="footer-information__head">Ma'lumotlar</li>
+                            <li>Tovar yetkazib berish</li>
+                            <li>Tovarni qaytarish</li>
+                            <li>Biz haqimizda</li>
+                        </ul>
+                    </div>
+                    <div class="col col-fix col-12 col-sm-6 col-md-4 col-lg-3">
+                        <ul class="footer-information">
+                            <li class="footer-information__head">Biz bilan aloqa</li>
+                            <li>+998 99 121 23 08</li>
+                            <li>info@Car.uz</li>
+                            <li>Qoraqalpog’iston, Beruniy</li>
+                        </ul>
+                    </div>
+                    <div class="col col-fix col-12 col-sm-6 col-md-4 col-lg-3">
+                        <ul class="footer-information">
+                            <li class="footer-information__head">Ijtimoiy tarmoqlarimiz</li>
+                            <div class="information-social">
+                                <a href="https://twitter.com/?lang=vi">
+                                    <i class="information-social fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="https://www.instagram.com/">
+                                    <i class="information-social fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="https://www.facebook.com/">
+                                    <i class="information-social fa-brands fa-facebook"></i>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>  
+            </div>
+            
+        </footer>
+    </div>
+
+    <div class="show-menu">
+        <div class="show-menu__container container-fix">
+            <ul class="menu-user-list">
+                <li class="menu-user-list-icon">
+                    <img src="./icons/user.svg" alt="">
+                    User
+                    <i class="menu-user-icon-close fa-solid fa-xmark" onclick="hideShowMenu()"></i>
+                </li>
+                <li class="menu-user-list-icon">
+                    <img src="./icons/heart.svg" alt="">
+                    Favarite
+                </li>
+                <li class="menu-user-list-icon">
+                    <img src="./icons/cart.svg" alt="">
+                    Cart
+                </li>
+                <li class="menu-user-list-icon">
+                    +998 (99) 121 23 08
+                </li>
+                <li class="menu-user-list-icon menu-user-nav d-sm-none">
+                    Mahsulotlar
+                </li>
+                <li class="menu-user-list-icon menu-user-nav d-sm-none">
+                    Chegirmalar
+                </li>
+                <li class="menu-user-list-icon menu-user-nav ">
+                    Yetkazib berish
+                </li>
+            </ul>
+        </div>
+        <span onclick="hideShowMenu()"></span>
+    </div>
+
+    <script src="./js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
